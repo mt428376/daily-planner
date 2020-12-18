@@ -19,8 +19,8 @@ row.append(button);
 
 $(".container").append(row);
 
-var buttonStorage = document.getElementsByClass("textarea").value;
+var buttonStorage = document.getElementsByClass("button").value;
     localStorage.setItem("button", buttonStorage)
 
 
-localStorage.button("textarea", JSON.stringify(textArea));
+localStorage.setItem("button", JSON.stringify(button));
