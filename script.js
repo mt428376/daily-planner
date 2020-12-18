@@ -16,11 +16,8 @@ row.append(textArea);
 var button = $("<button>");
 button.addClass("saveBtn col-1");
 row.append(button);
-
-$(".container").append(row);
-
-var buttonStorage = document.getElementsByClass("button").value;
-    localStorage.setItem("button", buttonStorage)
-
-
-localStorage.setItem("button", JSON.stringify(button));
+if (localStorage.getItem(hourArray[1]) !== null) {
+  var scheduleData = localStorage.getItem(hourArray[i]);
+  row.append(button);
+  $(".container").append(row);
+}
